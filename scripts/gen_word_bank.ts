@@ -11,10 +11,10 @@ function uuidv4() {
 }
 
 (async () => {
-  if (existsSync("public/word_bank")) {
-    await fs.rm("public/word_bank", { recursive: true });
+  if (existsSync("dist/word_bank")) {
+    await fs.rm("dist/word_bank", { recursive: true });
   }
-  await fs.mkdir("public/word_bank");
+  await fs.mkdir("dist/word_bank");
   const files = await fs.readdir("word_bank");
   const wordBankMeta: WordBankMeta[] = [];
   await Promise.all(
@@ -36,8 +36,8 @@ function uuidv4() {
         language: wordBank.language,
         description: wordBank.description,
       });
-      await fs.writeFile(`public/word_bank/${wordBank.id}.json`, JSON.stringify(wordBank));
+      await fs.writeFile(`dist/word_bank/${wordBank.id}.json`, JSON.stringify(wordBank));
     })
   );
-  await fs.writeFile(`public/word_bank/meta.json`, JSON.stringify(wordBankMeta));
+  await fs.writeFile(`dist/word_bank/meta.json`, JSON.stringify(wordBankMeta));
 })();
