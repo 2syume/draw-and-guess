@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import { existsSync } from "fs";
-import { WordBankContent, WordBankMeta } from "../src/WordBank";
+import { WordBankContent, WordBankMeta } from "../src/wordBankInterface";
 
 function uuidv4() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
