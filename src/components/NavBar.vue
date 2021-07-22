@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logo">
-      <a href="/">BGMNA 你画我猜词库</a>
+      <router-link to="/">BGMNA 你画我猜词库</router-link>
     </div>
   </div>
 </template>
