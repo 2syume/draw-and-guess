@@ -1,6 +1,6 @@
-#topic=Dota2物品、英雄、聊天轮盘
+#topic=Dota2 物品、用语、英雄、聊天轮盘
 #language=中文
-#description=Dota2 装备，英雄，聊天轮盘，常用词等
+#description=Dota2 装备，英雄，用语，聊天轮盘，常用词等
 阿哈利姆福佑
 阿哈利姆魔晶
 阿哈利姆神杖
