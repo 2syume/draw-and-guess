@@ -47,7 +47,7 @@ export default class WordBank extends Vue {
       await this.$router.push({ path: "/" });
       return;
     }
-    const response = await fetch(`/word_bank/${id}.json`);
+    const response = await fetch(`${process.env.BASE_URL ?? "/"}word_bank/${id}.json`);
     this.wordBankContent = (await response.json()) as WordBankContent;
     this.loading = false;
     await this.randomWord();

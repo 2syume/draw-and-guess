@@ -46,7 +46,7 @@ export default class Home extends Vue {
   }
 
   async loadWordBankMetas(): Promise<void> {
-    const response = await fetch("/word_bank/meta.json");
+    const response = await fetch(`${process.env.BASE_URL ?? "/"}word_bank/meta.json`);
     this.wordBankMetas = (await response.json()) as WordBankMeta[];
     this.loading = false;
   }
