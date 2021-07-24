@@ -4,8 +4,8 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push events but only for the master branch
-  push:
+  # Triggers the workflow on pull request events but only for the master branch
+  pull_request:
     branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -36,13 +36,3 @@ jobs:
 
       - name: Create word bank
         run: yarn gen-word-bank
-        
-      - name: GitHub Pages action
-        uses: peaceiris/actions-gh-pages@v3.7.3
-        with:
-          publish_dir: dist
-          #cname: draw-and-guess.bgmna.org
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-        
-      
-      
