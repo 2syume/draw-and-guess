@@ -1600,12 +1600,12 @@
     webpack "^5.22.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-pwa@~5.0.0-beta.2":
-  version "5.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.2.tgz#63f1be6e336da1e0a96f8d16cfbd6b35b5d2895c"
-  integrity sha512-H1+vxsBi4dr9hl/4oE93lqRTg4nUscFU9+JHEEpjKfQcrdauu3aT4IG3+AEtqDJ+cJOYrttLWlWjUkCn3492WA==
+"@vue/cli-plugin-pwa@~5.0.0-beta.7":
+  version "5.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-5.0.0-beta.7.tgz#9276ae9d832bbeb5281653b7fa1b0fd46608ccc7"
+  integrity sha512-4vHbKF1yicxS2vyOnhBiqJCE+iG1sFPshNgFYfzPrMC3r1b+MvZIXbSPsUOQtoNmNyi4qiucRssgh4n9pDr/eA==
   dependencies:
-    "@vue/cli-shared-utils" "^5.0.0-beta.2"
+    "@vue/cli-shared-utils" "^5.0.0-beta.7"
     html-webpack-plugin "^5.1.0"
     webpack "^5.22.0"
     workbox-webpack-plugin "^6.1.0"
@@ -1702,12 +1702,12 @@
     webpack-merge "^5.7.3"
     webpack-virtual-modules "^0.4.2"
 
-"@vue/cli-shared-utils@^5.0.0-beta.2":
-  version "5.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.0-beta.2.tgz#b7bad21e3b13b5dbb985c07bef14dcbd669d90da"
-  integrity sha512-gYznhuPIsSpX6M0LE6GTOsy/V9xG0qEZoBw9bSCC5/eEg+JOwoBXqDdqOXrTPEc6oc0zjPM3lk9zlwsJQ4cUcg==
+"@vue/cli-shared-utils@^5.0.0-beta.2", "@vue/cli-shared-utils@^5.0.0-beta.7":
+  version "5.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.0-beta.7.tgz#b7dc167d6e7a66ae2e02065c2ff46acefe21b569"
+  integrity sha512-5z+z+pSjM55aGbLf2HF4ND4rQhOYACRWmn+9P2va8bL5ZPP2K3162m1R1YGP3ftCsZwIzII7ksIFBba75TNjkg==
   dependencies:
-    chalk "^4.1.0"
+    chalk "^4.1.2"
     execa "^1.0.0"
     joi "^17.4.0"
     launch-editor "^2.2.1"
@@ -2599,6 +2599,14 @@ chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
   integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
