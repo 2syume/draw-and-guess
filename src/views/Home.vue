@@ -46,6 +46,7 @@ export default class Home extends Vue {
   }
 
   async loadWordBankMetas(): Promise<void> {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions, @typescript-eslint/no-unsafe-member-access
     const response = await fetch(`${process.env.BASE_URL ?? "/"}word_bank/meta.json`);
     this.wordBankMetas = (await response.json()) as WordBankMeta[];
     this.loading = false;

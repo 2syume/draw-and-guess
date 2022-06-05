@@ -2,7 +2,9 @@
 
 import { register } from "register-service-worker";
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 if (process.env.NODE_ENV === "production") {
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions, @typescript-eslint/no-unsafe-member-access
   register(`${process.env.BASE_URL ?? ""}service-worker.js`, {
     ready() {
       console.log(

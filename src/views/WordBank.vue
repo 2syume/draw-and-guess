@@ -47,6 +47,7 @@ export default class WordBank extends Vue {
       await this.$router.push({ path: "/" });
       return;
     }
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions, @typescript-eslint/no-unsafe-member-access
     const response = await fetch(`${process.env.BASE_URL ?? "/"}word_bank/${id}.json`);
     this.wordBankContent = (await response.json()) as WordBankContent;
     this.loading = false;
